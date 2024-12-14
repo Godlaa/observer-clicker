@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ObserverExample</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-utilities.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1 class="m-0">🕹️ ObserverExample Кликер</h1>
+            <h2 id="level-display" class="m-0">Уровень: 1</h2>
+          </div>
+
+        <div id="click-button-container">
+            <p id="click-counter">Кликов: 0</p>
+            <button id="click-button" class="rounded-circle mt-3 btn btn-primary">Нажми меня!</button>
+            <p id="bonus-message"></p>
+        </div>
+
+        <h2>🎉 Улучшения</h2>
+        <div id="upgrade-container" class="row justify-content-center">
+          <div class="col-4 col-sm-3">
+            <div class="upgrade-locked" data-unlock-clicks="50">
+              <img src="static/html.png" alt="HTML Upgrade" class="img-fluid">
+              <p>50 Кликов</p>
+            </div>
+          </div>
+          <div class="col-4 col-sm-3">
+            <div class="upgrade-locked" data-unlock-clicks="200">
+              <img src="static/css.png" alt="CSS Upgrade" class="img-fluid">
+              <p>200 Кликов</p>
+            </div>
+          </div>
+          <div class="col-4 col-sm-3">
+            <div class="upgrade-locked" data-unlock-clicks="500">
+              <img src="static/js.png" alt="JS Upgrade" class="img-fluid">
+              <p>500 Кликов</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
