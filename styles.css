@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #282c34;
+    color: #61dafb;
+    margin-top: 4rem;
+}
+
+#click-button-container {
+    margin-top: 50px;
+}
+
+#click-button {
+    font-size: 20px;
+    padding: 70px 20px;
+    margin-bottom: 20px;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#click-counter,
+#bonus-message {
+    font-size: 20px;
+}
+
+#click-button.win {
+    background-color: #28a745 !important;
+    color: #fff !important;
+    cursor: default;
+    pointer-events: none;
+    transform: scale(1.2);
+}
+
+#click-button.win::after {
+    content: "🎉";
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.upgrade-locked img {
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
+
+.upgrade-unlocked img {
+    filter: none;
+    opacity: 1;
+}
+
+.upgrade-locked {
+    border: 2px dashed #aaa;
+    cursor: pointer;
+}
+
+.upgrade-unlocked {
+    border: 1px solid #000000;
+    background-color: #d4edda;
+}
+
+.upgrade-unlocked p {
+    color: #000000;
+}
