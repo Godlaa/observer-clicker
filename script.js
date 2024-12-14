@@ -29,7 +29,7 @@ class Game {
     }
 
     incrementClicks() {
-        this.clickCount += 500;
+        this.clickCount += this.level;
     }
 
     decrementClicks(count = 1) {
